@@ -1,0 +1,71 @@
+body {
+  background-image: url(bilder/vattenfall-sv-1.jpg);
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+#welcome-box {
+  text-align: center;
+  color: #dee2d6;
+  border: 3px solid #dee2d6;
+  padding: 10px;
+  margin: 10px;
+  height: 60px;
+  margin-top: 28vh;
+  margin-bottom: 38vh;
+}
+
+#grid-container-homepage {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 25% 25% 25% 25%;
+  height: 100vh;
+}
+
+#text-box-one, #text-box-two {
+  background-color: #dee2d6;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 5px;
+  padding-right: 5px;
+  color: #171738;
+  font-size: 1.3em;
+}
+
+#image-one-homepage {
+  background-image: url(bilder/helagarden.jpg);
+  background-position: 30%;
+  background-size: cover;
+}
+
+#image-two-homepage {
+  background-image: url(bilder/badplats.jpg);
+  background-size: cover;
+  background-position: center 65%;
+}
+
+@media (min-width: 615px) {
+  #grid-container-homepage {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+    "top-left top-right"
+    "bottom-left bottom-right";
+  }
+
+  #image-two-homepage {
+    grid-area: bottom-left;
+    background-position: center center;
+  }
+
+  #text-box-one, #text-box-two {
+    padding-top: 50px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: #171738;
+  }
+}

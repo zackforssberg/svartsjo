@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Detta bildgalleri visar upp alla sidor av Svartsjö Gård."
+    />
+    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="galleri.css" />
+    <title>Svartsjö Gård - Galleri</title>
+  </head>
+  <body>
+    <nav>
+      <img src="bilder/Svartsjo.png" alt="Logga" />
+      <ul>
+        <li class="navlinks" id="homelink">
+          <a href="index.html">Hem</a>
+        </li>
+        <li class="navlinks" id="gallerylink">
+          <a href="galleri.html">Galleri</a>
+        </li>
+        <li class="navlinks" id="aboutlink">
+          <a href="gården.html">Om Gården</a>
+        </li>
+      </ul>
+    </nav>
+    <main>
+      <!--Tre bilder har fel aria-label när width är större än 615px, detta är godkänt av utbildare-->
+      <div
+        aria-label="Bilden visar en bubbelpool med en liten sjö i bakgrunden."
+        id="pic-one"
+        role="img"
+      ></div>
+      <div
+        aria-label="Bilden visar insidan av en bastu."
+        id="pic-two"
+        role="img"
+      ></div>
+      <div
+        aria-label="Bilden visar en tegelvägg och i bakgrunden syns en liten bit av en sjö med hopptorn."
+        id="pic-three"
+        role="img"
+      ></div>
+      <div
+        aria-label="Bilden visar en liten sjö med två hopptorn."
+        id="pic-four"
+        role="img"
+      ></div>
+      <div
+        aria-label="Bilden visar solnedgång över en sjö som har en liten badplats."
+        id="pic-five"
+        role="img"
+      ></div>
+      <div
+        aria-label="Bilden visar ett litet fönster i en tegelvägg med en buske som reflekterar solljus framör."
+        id="pic-six"
+        role="img"
+      ></div>
+      <div
+        aria-label="Bilden visar en gård med ett stort ljusgrått hus i mitten."
+        id="pic-seven"
+        role="img"
+      ></div>
+      <div
+        aria-label="Bilden visar en gård med en liten sjö tagen med en drönare."
+        id="pic-eight"
+        role="img"
+      ></div>
+      <div
+        aria-label="Bilden visar en badplats med en liten brygga och ett hopptorn."
+        id="pic-nine"
+        role="img"
+      ></div>
+      <div
+        aria-label="Bilden visar en rottweiler valp på en gräsmatta."
+        id="pic-ten"
+        role="img"
+      ></div>
+      <div
+        aria-label="Bilden visar en sjö tagen med en drönare."
+        id="pic-eleven"
+        role="img"
+      ></div>
+      <div id="video">
+        <video
+          aria-label="Film som visar en sjö med badplats."
+          controls
+          src="bilder/video-sjo.mp4"
+        ></video>
+      </div>
+    </main>
+  </body>
+</html>

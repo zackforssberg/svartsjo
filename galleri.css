@@ -1,0 +1,136 @@
+main {
+  display: grid;
+  gap: 15px;
+  grid-template-areas:
+  "one two"
+  "three two"
+  "four four"
+  "five six"
+  "seven seven"
+  "seven seven"
+  "eight eight"
+  "nine ten"
+  "nine eleven"
+  "twelwe twelwe"
+  "twelwe twelwe";
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  height: 1750px;
+  margin: 15px;
+}
+
+#pic-one {
+  grid-area: one;
+  background-image: url(bilder/bubbelbad.jpg);
+  background-size: cover;
+  background-position: center center;
+}
+
+#pic-two {
+  grid-area: two;
+  background-image: url(bilder/bastu.jpg);
+  background-size: cover;
+  background-position: center center;
+}
+
+#pic-three {
+  grid-area: three;
+  background-image: url(bilder/tegelvagg.jpg);
+  background-size: cover;
+  background-position: center center;
+}
+
+#pic-four {
+  grid-area: four;
+  background-image: url(bilder/hopptorn.jpg);
+  background-size: cover;
+  background-position: center center;
+}
+
+#pic-five {
+  grid-area: five;
+  background-image: url(bilder/overview.jpg);
+  background-size: cover;
+  background-position: center center;
+}
+
+#pic-six {
+  grid-area: six;
+  background-image: url(bilder/buske&fonster.jpg);
+  background-size: cover;
+  background-position: center center;
+}
+
+#pic-seven {
+  grid-area: seven;
+  background-image: url(bilder/huset-vagen.jpg);
+  background-size: cover;
+  background-position: center center;
+}
+
+#pic-eight {
+  grid-area: eight;
+  background-image: url(bilder/helagardenljus.jpg);
+  background-size: cover;
+  background-position: center center;
+}
+
+#pic-nine {
+  grid-area: nine;
+  background-image: url(bilder/brygga.jpg);
+  background-size: cover;
+  background-position: center center;
+}
+
+#pic-ten {
+  grid-area: ten;
+  background-image: url(bilder/elsa-valp.jpg);
+  background-size: cover;
+  background-position: center 60%;
+}
+
+#pic-eleven {
+  grid-area: eleven;
+  background-image: url(bilder/sjo-soder.jpg);
+  background-size: cover;
+  background-position: 65% center;
+}
+
+#video {
+  grid-area: twelwe;
+}
+
+video {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+@media (min-width: 615px) {
+  main {
+    display: grid;
+    grid-template-areas:
+    "one one two three"
+    "one one two four"
+    "five six seven seven"
+    "eight eight seven seven"
+    "nine ten twelwe twelwe"
+    "nine eleven twelwe twelwe";
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    /* varje rad är 250px i höjd */
+    height: 1500px;
+    margin: 15px;
+  }
+
+  #pic-one {
+    background-image: url(bilder/bubbelbad.jpg);
+  }
+
+  #pic-four {
+    background-image: url(bilder/sjo-natt.jpg);
+  }
+
+  #pic-seven {
+    background-image: url(bilder/huset-vagen.jpg);
+  }
+}
